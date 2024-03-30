@@ -5,8 +5,8 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+/* @import url('./vite-promo.css');
+@import url('./header.css'); */
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +22,61 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+}
+
+.form-control {
+  width: 272px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #808080;
+  padding: 8px 16px;
+
+  transition: border 250ms ease-in-out;
+}
+
+.form-control:hover {
+  border: 1px solid #000;
+}
+
+.btn-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background-color: #4e75ff;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: #6c8cff;
 }
