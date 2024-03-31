@@ -27,11 +27,14 @@
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .search-form {
   display: flex;
   gap: 8px;
+  margin-bottom: 32px;
 }
 
 .form-control {
@@ -79,4 +82,51 @@ body {
 
 .btn-submit:hover {
   background-color: #6c8cff;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.retrieved-search-element {
+  width: 360px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.img-element {
+  width: 360px;
+  max-height: 200px;
+  margin-bottom: 4px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-item-text-bold {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.menu-item-text {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
